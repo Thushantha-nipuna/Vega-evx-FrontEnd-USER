@@ -1,0 +1,305 @@
+.car-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1f1f1f; /* Dark gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ffffff; /* White text */
+    font-family: "Arial", sans-serif;
+  }
+  
+  .car-form h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8f9fa; /* Light gray text */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #f1f1f1;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2d2d2d; /* Darker input background */
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border: 1px solid #007bff;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .message.success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .message.error {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* File Input Styling */
+  input[type="file"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Admin Panel Look */
+  .admin-panel {
+    display: flex;
+    min-height: 100vh;
+    background-color: #121212;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #181818;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .sidebar h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #fff;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .update-car-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+  }
+  
+  .update-car-form h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .update-form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .update-form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .update-form-group input,
+  .update-form-group select,
+  .update-form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .update-form-group textarea {
+    resize: vertical;
+  }
+  
+  .update-submit-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .update-submit-button:hover {
+    background-color: #218838;
+  }
+  
+  .update-form-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: green;
+  }
+  
+  .update-form-message.error {
+    color: red;
+  }
+  .delete-car-form-container {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .delete-car-form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .delete-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .delete-form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .delete-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .delete-button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .delete-button:hover {
+    background: #c9302c;
+  }
+  
+  .delete-form-message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  .delete-form-message.success {
+    color: #5cb85c;
+  }
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgb(27, 26, 26);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-table th, .orders-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .orders-table th {
+    background: #333;
+    color: white;
+  }
+  
+  .orders-table tr:nth-child(even) {
+    background: #1c1a1a;
+  }
+  
+  .orders-table .pending {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .orders-table .completed {
+    color: blue;
+    font-weight: bold;
+  }
+  
