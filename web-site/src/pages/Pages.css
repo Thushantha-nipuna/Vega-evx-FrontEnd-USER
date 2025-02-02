@@ -6,16 +6,16 @@
     height: calc(100vh - 160px); 
   }
   .img-text1 {
-    font-family: 'Arial', sans-serif; /* Clean and modern font */
-    font-size: 2.5rem; /* Adjust size as needed */
-    font-weight: bold; /* Bold text */
-    color: #ffffff; /* White text color */
-    text-align: center; /* Center align text */
-    position: absolute; /* Position text absolutely within the container */
-    top: 250%; /* Center vertically */
-    left: 3500%; /* Center horizontally */
-    line-height: 1.2; /* Adjust line height for better spacing */
-    white-space: nowrap; /* Prevent text from wrapping automatically */
+    font-family: 'Arial', sans-serif; 
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: #ffffff; 
+    text-align: center; 
+    position: absolute; 
+    top: 250%; 
+    left: 3500%; 
+    line-height: 1.2; 
+    white-space: nowrap; 
   }
  /* Carousel Container */
 .carousel-container {
@@ -736,7 +736,7 @@
   border-radius: 5px;
   outline: none;
   background-color: rgba(255, 255, 255, 0.2); /* Slight transparency */
-  color: white;
+  color: rgb(99, 95, 95);
 }
 
 .form-input::placeholder {

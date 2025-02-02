@@ -1,0 +1,3 @@
+1. Dealer Panel – Manage inventory, update stock status, and track vehicle orders.
+2. Admin Panel – Admins can insert, update and delete car models. also they can see all order infos.( for now we hardcoded admin username (adminVega) and password (adminVega123). if the username and the password equal to these ones they redirect to the admin dashboard. we adding proper session managements for both admins and the users in our future updates)
+ 

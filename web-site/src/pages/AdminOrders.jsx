@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./admin.css"; // Import CSS for styling
+import "./admin.css"; 
 
 const AdminOrders = () => {
   const [orders, setOrders] = useState([]);
 
-  // Fetch orders from backend API
   useEffect(() => {
     const fetchOrders = async () => {
       try {

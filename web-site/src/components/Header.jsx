@@ -7,26 +7,25 @@ function Header() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
-  // Fetch current user when the component loads or when user state is updated (like after logout)
   useEffect(() => {
     axios
       .get("http://localhost:8080/api/auth/current-user", { withCredentials: true })
       .then(response => {
-        setUser(response.data); // If logged in, set user state
+        setUser(response.data); 
       })
       .catch(() => {
-        setUser(null); // If no user, set user state to null
+        setUser(null); 
       });
-  }, []); // Empty dependency array ensures this runs once on page load
+  }, []); 
 
   // Handle logout
   const handleLogout = () => {
     axios
       .post("http://localhost:8080/api/auth/logout", {}, { withCredentials: true })
       .then(() => {
-        setUser(null); // Clear user state on logout
-        localStorage.removeItem("user"); // Remove any localStorage session data
-        navigate("/"); // Redirect to homepage or login page after logout
+        setUser(null); 
+        localStorage.removeItem("user"); 
+        navigate("/"); 
       })
       .catch((error) => {
         console.error("Logout failed:", error);

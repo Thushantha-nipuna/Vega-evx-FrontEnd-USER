@@ -15,7 +15,7 @@ function Login() {
     // Check for admin credentials
     if (username === "adminVega" && password === "adminVega123") {
       localStorage.setItem("user", JSON.stringify({ username }));
-      navigate("/Dashboard"); // Redirect to Dashboard page
+      navigate("/Dashboard"); 
       return;
     }
 
@@ -33,10 +33,8 @@ function Login() {
         throw new Error("Invalid login");
       }
 
-      // Store user session
       localStorage.setItem("user", JSON.stringify(userData));
 
-      // Redirect normal users to Models page
       navigate("/Models"); 
       
     } catch (error) {
