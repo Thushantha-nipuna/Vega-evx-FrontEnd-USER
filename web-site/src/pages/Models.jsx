@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; 
 import "./Pages.css";
 import Footer from "../components/Footer";
 
 function Models() {
   const [models, setModels] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate(); 
 
   // Fetch car models from backend
   useEffect(() => {
     fetch("http://localhost:8080/api/admin/cars")
-
       .then((response) => response.json())
       .then((data) => setModels(data))
       .catch((error) => console.error("Error fetching car models:", error));
@@ -30,6 +31,10 @@ function Models() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % models.length);
   };
 
+  const handleOrderClick = () => {
+    navigate("/"); // Redirect to order page
+  };
+
   return (
     <div className="carousel-container">
       <div className="carousel">
@@ -40,8 +45,8 @@ function Models() {
           >
             {/* Render the car image */}
             <img
-              src={`http://localhost:8080${model.image}`} // Adjusted to match the correct backend property
-              alt={model.name} // Display the car name properly
+              src={`http://localhost:8080${model.image}`} 
+              alt={model.name} 
               style={{ width: "100%", height: "100%", borderRadius: "8px", objectFit: "cover" }}
             />
             {/* Display model name */}
@@ -50,7 +55,7 @@ function Models() {
             <p>Price: ${model.price?.toLocaleString()}</p> 
             {/* Show car features */}
             <p>Features: {model.features}</p>  {/* Add features */}
-            <button className="customize-btn">Order</button>
+            <button className="customize-btn" onClick={handleOrderClick}>Order</button>
           </div>
         ))}
       </div>

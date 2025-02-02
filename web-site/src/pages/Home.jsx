@@ -105,6 +105,12 @@ function Home() {
             playsInline
             className="full-width-video"
           />
+          <div className="img-overlay">
+            <p className="img-text1">
+            “Powering An Extraordinary Future <br />
+            With Infinite Possibilities”
+            </p>
+          </div>
         </div>
       </div>
 
@@ -130,7 +136,7 @@ function Home() {
               <Link to="/models">Discover Models</Link>
             </button>
           </div>
-
+          
           <div className="form-card">
             <h1 className="form-title">Order Your Car</h1>
             <form onSubmit={handleSubmit}>
@@ -218,7 +224,9 @@ function Home() {
 
           <Footer />
         </div>
+        
       </div>
+      
     </>
   );
 }

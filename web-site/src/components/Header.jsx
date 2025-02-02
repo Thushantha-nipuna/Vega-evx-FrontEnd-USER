@@ -40,9 +40,9 @@ function Header() {
       </h1>
       <nav className="nav">
         <Link to="/Models">Models</Link>
-        <Link to="/dealer">Dealerships</Link>
+        <Link to="/contact">Contact us</Link>
         <Link to="/Gallery">Gallery</Link>
-        <Link to="/OrderPage">Order</Link>
+        <Link to="/AboutUs">About us</Link>
 
         {/* Conditional Rendering for Login/Logout */}
         {user ? (

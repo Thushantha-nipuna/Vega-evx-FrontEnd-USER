@@ -11,6 +11,14 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    // Check for admin credentials
+    if (username === "adminVega" && password === "adminVega123") {
+      localStorage.setItem("user", JSON.stringify({ username }));
+      navigate("/Dashboard"); // Redirect to Dashboard page
+      return;
+    }
+
     try {
       const response = await axios.post(
         "http://localhost:8080/api/auth/login",
@@ -28,14 +36,9 @@ function Login() {
       // Store user session
       localStorage.setItem("user", JSON.stringify(userData));
 
-      // Redirect based on isAdmin value
-      if (userData.isAdmin === 1) {
-        navigate("/CarForm"); // Redirect to admin page
-      } else if (userData.isAdmin === 2) {
-        navigate("/Gallery"); // Redirect to dealership page
-      } else {
-        navigate("/Models"); // Normal user goes to model page
-      }
+      // Redirect normal users to Models page
+      navigate("/Models"); 
+      
     } catch (error) {
       console.error("Error during login:", error.response?.data || error.message);
       setErrorMessage("Invalid username or password. Please try again.");

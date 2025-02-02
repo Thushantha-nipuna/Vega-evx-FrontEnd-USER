@@ -25,10 +25,12 @@ const AdminOrders = () => {
       <div className="sidebar">
         <h2>Admin Panel</h2>
         <ul>
-          <li><a href="/dashboard">Dashboard</a></li>
-          <li><a href="/update-car">Manage Cars</a></li>
-          <li><a href="/orders">Orders</a></li>
-          <li><a href="/logout">Logout</a></li>
+        <li><a href="/Dashboard">Dashboard</a></li>
+          <li><a href="/CarForm">Add Car</a></li>
+          <li><a href="/UpdateCarForm">Update Car Models</a></li>
+          <li><a href="/DeleteCarForm">Delete Car Models</a></li>
+          <li><a href="/AdminOrders">Orders</a></li>
+          <li><a href="/Home">Logout</a></li>
         </ul>
       </div>
 

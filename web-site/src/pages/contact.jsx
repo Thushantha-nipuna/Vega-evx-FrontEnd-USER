@@ -8,10 +8,7 @@ const Contact = () => {
       {/* Breadcrumb Section */}
       <div className="breadcrumb-section">
         <div className="container">
-          <h2>Contact Us</h2>
-          <p>
-            <a href="/">Home</a> &gt; Contact
-          </p>
+          
         </div>
       </div>
 

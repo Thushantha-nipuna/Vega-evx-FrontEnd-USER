@@ -9,10 +9,12 @@ const Dashboard = () => {
       <div className="sidebar">
         <h2>Admin Panel</h2>
         <ul>
-          <li><Link to="/">Dashboard</Link></li>
-          <li><Link to="/manage-cars">Manage Cars</Link></li>
+          
+          <li><Link to="/CarForm">Manage Cars</Link></li>
+          <li><Link to="/UpdateCarForm">Update Car Models</Link></li>
+          <li><Link to="/DeleteCarForm">Delete Car Models</Link></li>
           <li><Link to="/orders">Orders</Link></li>
-          <li><Link to="/users">Users</Link></li>
+          <li><Link to="/">LogOut</Link></li>
         </ul>
       </div>
 

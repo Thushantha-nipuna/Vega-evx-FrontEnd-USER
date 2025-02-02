@@ -94,7 +94,9 @@ const UpdateCarForm = () => {
         <ul>
           <li><a href="/Dashboard">Dashboard</a></li>
           <li><a href="/CarForm">Add Car</a></li>
-          <li><a href="/DeleteCarForm">Delete Car</a></li>
+          <li><a href="/UpdateCarForm">Update Car Models</a></li>
+          <li><a href="/DeleteCarForm">Delete Car Models</a></li>
+          <li><a href="/AdminOrders">Orders</a></li>
           <li><a href="/Home">Logout</a></li>
         </ul>
       </div>

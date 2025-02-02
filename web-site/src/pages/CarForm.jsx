@@ -59,9 +59,11 @@ const CarForm = () => {
         <h2>Admin Panel</h2>
         <ul>
           <li><a href="/Dashboard">Dashboard</a></li>
-          <li><a href="/UpdateCarForm">Manage Cars</a></li>
+          <li><a href="/CarForm">Manage Cars</a></li>
           <li><a href="/AdminOrders">Orders</a></li>
-          <li><a href="#">Logout</a></li>
+          <li><a href="/UpdateCarForm">Update Car Models</a></li>
+          <li><a href="/DeleteCarForm">Delete Car Models</a></li>
+          <li><a href="/">Logout</a></li>
         </ul>
       </div>
 
